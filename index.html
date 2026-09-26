@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia Nacional ENA | Alta Costura & Accesorios Exclusivos</title>
+    <title>Agencia Nacional ENA | Accesorios Exclusivos</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -35,7 +35,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(13, 15, 18, 0.9);
+            background: rgba(13, 15, 18, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border-color);
             z-index: 1000;
@@ -76,20 +76,19 @@
         }
 
         .hero {
-            height: 90vh;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 20px;
+            padding: 120px 20px 60px 20px;
             background: radial-gradient(circle at center, #1b202c 0%, var(--bg-color) 70%);
-            margin-top: 70px;
             border-bottom: 1px solid var(--border-color);
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 700;
             letter-spacing: -1px;
             margin-bottom: 20px;
@@ -103,8 +102,8 @@
         .hero p {
             font-size: 1.1rem;
             color: var(--text-secondary);
-            max-width: 600px;
-            margin-bottom: 40px;
+            max-width: 650px;
+            margin-bottom: 35px;
         }
 
         .btn {
@@ -126,12 +125,12 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 100px 20px;
+            padding: 80px 20px;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         .section-title h2 {
@@ -146,13 +145,13 @@
             font-size: 0.95rem;
         }
 
-        .grid {
+        .catalog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
-        .card {
+        .product-card {
             background-color: var(--card-color);
             border: 1px solid var(--border-color);
             border-radius: 8px;
@@ -160,56 +159,66 @@
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
+        .product-card:hover {
+            transform: translateY(-4px);
             border-color: var(--accent-gold);
         }
 
-        .card-img {
-            height: 320px;
-            background-color: #252a37;
+        .product-img-placeholder {
+            height: 280px;
+            background-color: #161922;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--text-secondary);
             font-size: 0.85rem;
+            border-bottom: 1px solid var(--border-color);
             letter-spacing: 1px;
             text-transform: uppercase;
         }
 
-        .card-body {
+        .product-info {
             padding: 24px;
         }
 
-        .card-title {
+        .product-name {
             font-size: 1.1rem;
             font-weight: 600;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
-        .card-price {
+        .product-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .product-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price-tag {
             color: var(--accent-gold);
-            font-weight: 700;
-            font-size: 1.2rem;
-            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            font-style: italic;
         }
 
-        .card-btn {
-            display: block;
-            width: 100%;
-            text-align: center;
+        .order-btn {
             background: transparent;
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 10px;
+            padding: 8px 16px;
             border-radius: 4px;
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: background 0.3s ease, color 0.3s ease;
         }
 
-        .card-btn:hover {
+        .order-btn:hover {
             background: var(--accent-gold);
             color: #0d0f12;
         }
@@ -238,42 +247,51 @@
     </header>
 
     <section id="inicio" class="hero">
-        <h1>Exclusividad, Estilo y Presencia <span>Ejecutiva</span></h1>
-        <p>Descubre nuestra selección de alta costura, calzado y accesorios diseñados para proyectar autoridad y distinción.</p>
-        <a href="#catalogo" class="btn">Explorar Colección</a>
+        <h1>Exclusividad, Estilo y <span>Accesorios de Alta Gama</span></h1>
+        <p>Disponibles para envíos. Contamos con variedad en accesorios exclusivos. Consulta directamente al WhatsApp para pedidos al mayor y detal.</p>
+        <a href="#catalogo" class="btn">Ver Catálogo Actual</a>
     </section>
 
     <div id="catalogo" class="container">
         <div class="section-title">
-            <h2>Colección Exclusiva</h2>
-            <p>Piezas seleccionadas bajo los más altos estándares de diseño y calidad.</p>
+            <h2>Catálogo de Artículos</h2>
+            <p>Selección disponible. Configura tus pedidos y cotiza al instante.</p>
         </div>
 
-        <div class="grid">
-            <div class="card">
-                <div class="card-img">[ Imagen de Prenda ]</div>
-                <div class="card-body">
-                    <h3 class="card-title">Saco Ejecutivo Minimalista</h3>
-                    <div class="card-price">$120.00</div>
-                    <a href="#" class="card-btn">Adquirir Pieza</a>
+        <div class="catalog-grid">
+            <div class="product-card">
+                <div class="product-img-placeholder">[ Espacio para Fotografía ]</div>
+                <div class="product-info">
+                    <h3 class="product-name">Accesorio Exclusivo ENA 01</h3>
+                    <p class="product-desc">Diseño selecto de alta rotación y excelente acabado.</p>
+                    <div class="product-action">
+                        <span class="price-tag">Precio a consultar</span>
+                        <a href="#" class="order-btn">Pedir por WhatsApp</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-img">[ Imagen de Calzado ]</div>
-                <div class="card-body">
-                    <h3 class="card-title">Mocasines de Cuero Premium</h3>
-                    <div class="card-price">$95.00</div>
-                    <a href="#" class="card-btn">Adquirir Pieza</a>
+            <div class="product-card">
+                <div class="product-img-placeholder">[ Espacio para Fotografía ]</div>
+                <div class="product-info">
+                    <h3 class="product-name">Accesorio Exclusivo ENA 02</h3>
+                    <p class="product-desc">Variedad en tendencia con estándares superiores.</p>
+                    <div class="product-action">
+                        <span class="price-tag">Precio a consultar</span>
+                        <a href="#" class="order-btn">Pedir por WhatsApp</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-img">[ Imagen de Accesorio ]</div>
-                <div class="card-body">
-                    <h3 class="card-title">Cadena Acero Inoxidable Sólido</h3>
-                    <div class="card-price">$45.00</div>
-                    <a href="#" class="card-btn">Adquirir Pieza</a>
+            <div class="product-card">
+                <div class="product-img-placeholder">[ Espacio para Fotografía ]</div>
+                <div class="product-info">
+                    <h3 class="product-name">Accesorio Exclusivo ENA 03</h3>
+                    <p class="product-desc">Ideal para complementar cualquier estilo exigente.</p>
+                    <div class="product-action">
+                        <span class="price-tag">Precio a consultar</span>
+                        <a href="#" class="order-btn">Pedir por WhatsApp</a>
+                    </div>
                 </div>
             </div>
         </div>
