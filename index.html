@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia Nacional ENA | Accesorios Exclusivos</title>
+    <title>AGENCIA NACIONAL ENA | Catálogo Exclusivo</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -46,7 +46,7 @@
         }
 
         .logo {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             font-weight: 700;
             letter-spacing: 2px;
             color: var(--text-primary);
@@ -60,7 +60,7 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 25px;
         }
 
         nav ul li a {
@@ -76,13 +76,13 @@
         }
 
         .hero {
-            min-height: 80vh;
+            min-height: 75vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 120px 20px 60px 20px;
+            padding: 120px 20px 50px 20px;
             background: radial-gradient(circle at center, #1b202c 0%, var(--bg-color) 70%);
             border-bottom: 1px solid var(--border-color);
         }
@@ -93,6 +93,7 @@
             letter-spacing: -1px;
             margin-bottom: 20px;
             max-width: 800px;
+            text-transform: uppercase;
         }
 
         .hero h1 span {
@@ -100,16 +101,16 @@
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: var(--text-secondary);
             max-width: 650px;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
         }
 
-        .btn {
+        .btn-main {
             background-color: var(--accent-gold);
             color: #0d0f12;
-            padding: 14px 32px;
+            padding: 14px 30px;
             border-radius: 4px;
             text-decoration: none;
             font-weight: 600;
@@ -117,7 +118,7 @@
             transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
-        .btn:hover {
+        .btn-main:hover {
             transform: translateY(-2px);
             background-color: #d4b890;
         }
@@ -125,30 +126,26 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding: 70px 20px;
         }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
+        .category-section {
+            margin-bottom: 70px;
         }
 
-        .section-title h2 {
-            font-size: 2rem;
+        .category-title {
+            font-size: 1.6rem;
             font-weight: 600;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .section-title p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 15px;
+            letter-spacing: 0.5px;
         }
 
         .catalog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
 
         .product-card {
@@ -165,32 +162,32 @@
         }
 
         .product-img-placeholder {
-            height: 280px;
+            height: 260px;
             background-color: #161922;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--text-secondary);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             border-bottom: 1px solid var(--border-color);
             letter-spacing: 1px;
             text-transform: uppercase;
         }
 
         .product-info {
-            padding: 24px;
+            padding: 20px;
         }
 
         .product-name {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .product-desc {
             color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
         }
 
         .product-action {
@@ -201,20 +198,19 @@
 
         .price-tag {
             color: var(--accent-gold);
-            font-weight: 600;
-            font-size: 0.95rem;
-            font-style: italic;
+            font-weight: 700;
+            font-size: 1.1rem;
         }
 
         .order-btn {
             background: transparent;
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 8px 16px;
+            padding: 8px 14px;
             border-radius: 4px;
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             transition: background 0.3s ease, color 0.3s ease;
         }
 
@@ -231,6 +227,10 @@
             color: var(--text-secondary);
             font-size: 0.9rem;
         }
+
+        footer p {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -239,66 +239,117 @@
         <div class="logo">Agencia Nacional <span>ENA</span></div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ropa">Ropa</a></li>
+                <li><a href="#accesorios">Accesorios</a></li>
+                <li><a href="#zapatos">Zapatos</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="inicio" class="hero">
-        <h1>Exclusividad, Estilo y <span>Accesorios de Alta Gama</span></h1>
-        <p>Disponibles para envíos. Contamos con variedad en accesorios exclusivos. Consulta directamente al WhatsApp para pedidos al mayor y detal.</p>
-        <a href="#catalogo" class="btn">Ver Catálogo Actual</a>
+    <section class="hero">
+        <h1>Agencia Nacional <span>ENA</span></h1>
+        <p>Ventas al mayor y detal. Envíos nacionales. Encuentra lo mejor en moda, accesorios y calzado con calidad garantizada.</p>
+        <a href="#ropa" class="btn-main">Ver Catálogos</a>
     </section>
 
-    <div id="catalogo" class="container">
-        <div class="section-title">
-            <h2>Catálogo de Artículos</h2>
-            <p>Selección disponible. Configura tus pedidos y cotiza al instante.</p>
-        </div>
+    <div class="container">
 
-        <div class="catalog-grid">
-            <div class="product-card">
-                <div class="product-img-placeholder">[ Espacio para Fotografía ]</div>
-                <div class="product-info">
-                    <h3 class="product-name">Accesorio Exclusivo ENA 01</h3>
-                    <p class="product-desc">Diseño selecto de alta rotación y excelente acabado.</p>
-                    <div class="product-action">
-                        <span class="price-tag">Precio a consultar</span>
-                        <a href="#" class="order-btn">Pedir por WhatsApp</a>
+        <!-- CATEGORÍA: ROPA -->
+        <div id="ropa" class="category-section">
+            <h2 class="category-title">Catálogo de Ropa</h2>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <div class="product-img-placeholder">[ Foto Prenda 01 ]</div>
+                    <div class="product-info">
+                        <h3 class="product-name">Prenda Modelo ENA 01</h3>
+                        <p class="product-desc">Alta rotación y excelente diseño textil.</p>
+                        <div class="product-action">
+                            <span class="price-tag">$00.00</span>
+                            <a href="https://wa.me/?text=Hola,%20deseo%20pedir%20información%20sobre%20la%20Prenda%20Modelo%20ENA%2001" target="_blank" class="order-btn">Pedir por WhatsApp</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="product-card">
-                <div class="product-img-placeholder">[ Espacio para Fotografía ]</div>
-                <div class="product-info">
-                    <h3 class="product-name">Accesorio Exclusivo ENA 02</h3>
-                    <p class="product-desc">Variedad en tendencia con estándares superiores.</p>
-                    <div class="product-action">
-                        <span class="price-tag">Precio a consultar</span>
-                        <a href="#" class="order-btn">Pedir por WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img-placeholder">[ Espacio para Fotografía ]</div>
-                <div class="product-info">
-                    <h3 class="product-name">Accesorio Exclusivo ENA 03</h3>
-                    <p class="product-desc">Ideal para complementar cualquier estilo exigente.</p>
-                    <div class="product-action">
-                        <span class="price-tag">Precio a consultar</span>
-                        <a href="#" class="order-btn">Pedir por WhatsApp</a>
+                <div class="product-card">
+                    <div class="product-img-placeholder">[ Foto Prenda 02 ]</div>
+                    <div class="product-info">
+                        <h3 class="product-name">Prenda Modelo ENA 02</h3>
+                        <p class="product-desc">Tendencia actual disponible al mayor y detal.</p>
+                        <div class="product-action">
+                            <span class="price-tag">$00.00</span>
+                            <a href="https://wa.me/?text=Hola,%20deseo%20pedir%20información%20sobre%20la%20Prenda%20Modelo%20ENA%2002" target="_blank" class="order-btn">Pedir por WhatsApp</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- CATEGORÍA: ACCESORIOS -->
+        <div id="accesorios" class="category-section">
+            <h2 class="category-title">Catálogo de Accesorios</h2>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <div class="product-img-placeholder">[ Foto Accesorio 01 ]</div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cadena / Accesorio ENA 01</h3>
+                        <p class="product-desc">Acabado premium y alta durabilidad.</p>
+                        <div class="product-action">
+                            <span class="price-tag">$00.00</span>
+                            <a href="https://wa.me/?text=Hola,%20deseo%20pedir%20información%20sobre%20el%20Accesorio%20ENA%2001" target="_blank" class="order-btn">Pedir por WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-placeholder">[ Foto Accesorio 02 ]</div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cadena / Accesorio ENA 02</h3>
+                        <p class="product-desc">Estilo sofisticado para cualquier ocasión.</p>
+                        <div class="product-action">
+                            <span class="price-tag">$00.00</span>
+                            <a href="https://wa.me/?text=Hola,%20deseo%20pedir%20información%20sobre%20el%20Accesorio%20ENA%2002" target="_blank" class="order-btn">Pedir por WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORÍA: ZAPATOS -->
+        <div id="zapatos" class="category-section">
+            <h2 class="category-title">Catálogo de Zapatos</h2>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <div class="product-img-placeholder">[ Foto Calzado 01 ]</div>
+                    <div class="product-info">
+                        <h3 class="product-name">Calzado Modelo ENA 01</h3>
+                        <p class="product-desc">Confort y estilo superior garantizado.</p>
+                        <div class="product-action">
+                            <span class="price-tag">$00.00</span>
+                            <a href="https://wa.me/?text=Hola,%20deseo%20pedir%20información%20sobre%20el%20Calzado%20ENA%2001" target="_blank" class="order-btn">Pedir por WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-placeholder">[ Foto Calzado 02 ]</div>
+                    <div class="product-info">
+                        <h3 class="product-name">Calzado Modelo ENA 02</h3>
+                        <p class="product-desc">Variedad de tallas y modelos exclusivos.</p>
+                        <div class="product-action">
+                            <span class="price-tag">$00.00</span>
+                            <a href="https://wa.me/?text=Hola,%20deseo%20pedir%20información%20sobre%20el%20Calzado%20ENA%2002" target="_blank" class="order-btn">Pedir por WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer>
-        <p>&copy; 2026 Agencia Nacional ENA. Todos los derechos reservados.</p>
+        <p><strong>AGENCIA NACIONAL ENA</strong></p>
+        <p>Atención directa y pedidos al mayor y detal.</p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
     </footer>
 
 </body>
